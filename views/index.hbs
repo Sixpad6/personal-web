@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <title>Personal web </title>
+        <link rel="stylesheet" href="/public/style.css">
+    </head>
+
+    <body>
+        <nav>
+            <div class="left-side">
+                <img src="/public/img/logo2.png" alt="">
+                
+                <ul>
+                    <li>
+                        <a href="/home">Home</a>
+                    </li>
+                    <li>
+                        <a href="/blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-side">
+             <div style="display: flex; justify-content:center; align-items:center">
+                    <div>
+                        <a href="/login" style="text-decoration: none;">Login</a>
+                    </div>
+                    <div>
+                        <a href="/register">Register</a>
+                    </div>
+              </div>
+                <a href="/contact">Contact Me</a>
+            </div>
+
+        </nav>
+
+        <div class="container">
+            <div class="section">
+                <div class="left-side">
+                    <div style="
+                    border: 0px solid black;
+                    padding: 10px;
+                    border-radius: 15px;
+                    box-shadow: 0px 0px 15px rgb(78, 230, 230);
+                    width: 60%;
+                    height: 60%;
+                    margin-left: 60px;">
+                    <img src="/public/img/gambar.jpg" 
+                    style="width: 100%;
+                    border-radius: 15px;
+                    ">
+        
+                   <h3 style="text-align: left; ">Muhamad Said </h3>
+                   <p style="text-align: left;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, atque!</p>
+        
+                   <table border="1" 
+                   style="border-collapse: collapse;
+                   width: 100%;">
+                       <tr>
+                           <th>Experience</th>
+                           <th>Year</th>
+                       </tr>
+                       {{#each data}}
+                       <tr style="height: 20px; color:black">
+                           <td>{{this.nama}}</td>
+                           <td style="text-align: center;">{{this.tahun}}</td>
+                       </tr>
+                       {{/each}}
+                   </table>
+        
+                    </div>
+                </div>
+                <div class="right-side">
+                    <h2>What I Do</h2>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veniam expedita distinctio hic laudantium consequuntur, dolorum iste necessitatibus quasi assumenda accusantium nemo sint? Dignissimos beatae optio eveniet voluptatibus culpa id placeat explicabo maiores veniam, ut est, unde nam? Iure sequi, minima qui illo repudiandae hic ut eaque error tempora ducimus!</p>
+                    <div class="ability">
+                        <div>
+                            <img src="/public/img/html.png" alt="">
+                            <h4>HTML</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi velit iste soluta nemo optio, dicta commodi fugiat dolorem in ea.</p>
+                        </div>
+                        <div>
+                            <img src="/public/img/css.jpg" alt="">
+                            <h4>CSS</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae fugit totam dolor aspernatur molestiae quis voluptas debitis blanditiis laboriosam ut.</p>
+                        </div>
+                        <div>
+                            <img src="/public/img/js.png" alt="">
+                            <h4>Javascript</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus amet consequatur tenetur debitis molestias corporis pariatur fuga quae eos officiis.</p>
+                        </div>
+                    </div>
+                    <h2>Found Me On</h2>
+                    <div class="found">
+                        <div> 
+                            <img src="/public/icon/fb.png" alt="">
+                        </div>
+                        <div>
+                            <img src="/public/icon/instagram.png" alt="">
+                        </div>
+                        <div>
+                            <img src="/public/icon/twitter.png" alt="">
+                        </div>
+                        <div>
+                            <img src="/public/icon/linkedin.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
