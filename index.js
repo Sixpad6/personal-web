@@ -91,7 +91,7 @@ app.get('/blog', function(req, res){
                   
               }
           })
-          console.log(dataLogin)
+          
 
            res.render("blog", {isLogin : req.session.isLogin, blogs:dataLogin, user:req.session.user})
        })
@@ -113,6 +113,7 @@ app.get('/detail-blog/:id', function(req, res){
         client.query (`SELECT * FROM tb_blog WHERE id = ${id}`, function(err, result){
             if (err) throw err
             let data = result.rows[0]
+            
 
             res.render('detail-blog', {id : id, blog: data, user:req.session.user,isLogin : req.session.isLogin })
         })
