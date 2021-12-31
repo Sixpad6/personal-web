@@ -269,8 +269,8 @@ app.get('/logout', function(req, res){
     res.redirect('/blog')
 })
 
-app.listen(process.env.PORT || PORT, function(){
-    console.log(`Starting Server On port : ${PORT}`)
+app.listen(process.env.PORT || 5000, function(){
+    console.log(`Starting Server On port : 5000`)
 })
 
 // Mengkonversi waktu
