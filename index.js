@@ -269,7 +269,7 @@ app.get('/logout', function(req, res){
     res.redirect('/blog')
 })
 
-app.listen(PORT, function(){
+app.listen(process.env.PORT || PORT, function(){
     console.log(`Starting Server On port : ${PORT}`)
 })
 
